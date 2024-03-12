@@ -11,12 +11,13 @@
 .nav {
   text-decoration: none;
 
-  padding: 0.5rem 1rem;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  padding: 0.5rem 1.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  border-radius: 8px;
+
+  transition: all 0.1s ease-in-out;
 }
 
 .nav:first-child {
@@ -29,8 +30,12 @@
 
 .nav:hover {
   cursor: pointer;
+  color: black;
+  background-color: #e4e4e4;
 }
 
-.active {
-  border-bottom: 1px solid #dad9d9;
+.active,
+.active:hover {
+  color: white;
+  background-color: #444242;
 }
