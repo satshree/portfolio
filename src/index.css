@@ -7,6 +7,10 @@ body {
   font-family: "Inter", Helvetica, sans-serif;
 }
 
+img {
+  pointer-events: none;
+}
+
 .center {
   display: flex;
   align-items: center;
