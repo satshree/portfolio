@@ -14,6 +14,12 @@ export type Route = {
 
 export const routes: Route[] = [
   {
+    name: "",
+    text: "",
+    to: "/*",
+    element: <WildCard />,
+  },
+  {
     name: "home",
     text: "Home",
     to: "/",
@@ -22,13 +28,13 @@ export const routes: Route[] = [
   {
     name: "projects",
     text: "Projects",
-    to: "/",
+    to: "/projects",
     element: <Projects />,
   },
   {
     name: "contact",
     text: "Contact",
-    to: "/",
+    to: "/contact",
     element: <Contact />,
   },
 ];
@@ -38,10 +44,5 @@ export function getRoute(name: string) {
     if (r.name === name) return r;
   }
 
-  return {
-    name: "",
-    text: "",
-    to: "/*",
-    element: <WildCard />,
-  };
+  return routes[0];
 }

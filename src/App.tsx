@@ -7,8 +7,8 @@ import { routes } from "./routes";
 function App() {
   return (
     <>
-      <NavBar />
       <BrowserRouter>
+        <NavBar />
         <Routes>
           {routes.map((route) => (
             <Route key={route.name} path={route.to} element={route.element} />

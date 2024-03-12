@@ -1,0 +1,30 @@
+.navbar {
+  height: 80px;
+}
+
+.nav {
+  text-decoration: none;
+
+  padding: 0.5rem 1rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.nav:first-child {
+  margin-left: 0;
+}
+
+.nav:last-child {
+  margin-right: 0;
+}
+
+.nav:hover {
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 1px solid #dad9d9;
+}
