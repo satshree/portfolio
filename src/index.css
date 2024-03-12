@@ -1,5 +1,18 @@
 * {
   margin: 0;
+}
+
+body {
   font-size: 16px;
   font-family: "Inter", Helvetica, sans-serif;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 1rem 5rem;
 }
