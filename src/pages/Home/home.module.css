@@ -1,0 +1,15 @@
+.home-page {
+  height: 100vh;
+}
+
+.main-title {
+  font-size: 48px;
+}
+
+.title {
+  font-size: 28px;
+}
+
+.details {
+  margin-left: 2.5rem;
+}
