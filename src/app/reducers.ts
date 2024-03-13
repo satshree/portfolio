@@ -1,5 +1,6 @@
 import { GlobalState, ProjectData } from "../types";
 import { ActiveProjectAction, ActionTypes, ProjectListAction } from "./actions";
+import projects from "./projects";
 
 const initialActiveProjectState: ProjectData = {
   title: "",
@@ -8,7 +9,7 @@ const initialActiveProjectState: ProjectData = {
   images: [],
 };
 
-const initialProjectListState: ProjectData[] = [];
+const initialProjectListState: ProjectData[] = projects;
 
 const initialState: GlobalState = {
   activeProject: initialActiveProjectState,
