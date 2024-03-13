@@ -38,6 +38,7 @@ function Projects(props: ProjectProps) {
             title={p.title}
             description={p.description}
             techStack={p.techStack}
+            link={p.link}
             images={p.images}
             onClick={openDrawer}
           />
