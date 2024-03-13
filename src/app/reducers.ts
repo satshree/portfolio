@@ -6,6 +6,7 @@ const initialActiveProjectState: ProjectData = {
   title: "",
   description: "",
   techStack: [],
+  link: "",
   images: [],
 };
 

@@ -18,6 +18,7 @@ function Card(props: CardProps) {
     title,
     description,
     techStack,
+    link: props.link || "",
     images: props.images || [img],
   };
 

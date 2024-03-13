@@ -7,6 +7,7 @@ export interface ProjectData {
   description?: string;
   techStack?: string[];
   images?: string[];
+  link?: string;
 }
 
 export type CardProps = PropsWithChildren &

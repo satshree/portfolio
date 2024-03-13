@@ -20,12 +20,14 @@ function ProjectDrawer(props: DrawerProps) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [techStack, setTechStack] = useState<string[]>([]);
+  const [link, setLink] = useState<string>("");
   const [images, setImages] = useState<string[]>([]);
 
   useEffect(() => setOpen(props.open), [props.open]);
   useEffect(() => setTitle(props.title || ""), [props.title]);
   useEffect(() => setDescription(props.description || ""), [props.description]);
   useEffect(() => setTechStack(props.techStack || []), [props.techStack]);
+  useEffect(() => setLink(props.link || ""), [props.link]);
   useEffect(() => setImages(props.images || [img]), [props.images]);
 
   const onClose = () => {
@@ -55,7 +57,18 @@ function ProjectDrawer(props: DrawerProps) {
         </DrawerBody>
 
         <DrawerFooter>
-          <Button variant="outline" size="sm" mr={3} onClick={onClose}>
+          {link ? (
+            <Button
+              as={"a"}
+              href={link}
+              target="_blank"
+              colorScheme="teal"
+              mr={3}
+            >
+              Open App
+            </Button>
+          ) : null}
+          <Button variant="outline" mr={3} onClick={onClose}>
             Close
           </Button>
         </DrawerFooter>
