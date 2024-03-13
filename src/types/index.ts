@@ -13,3 +13,9 @@ export type CardProps = PropsWithChildren &
   ProjectData & {
     onClick?: (project: ProjectData) => void;
   };
+
+export type DrawerProps = PropsWithChildren &
+  ProjectData & {
+    open: true | false;
+    onClose?: () => void;
+  };

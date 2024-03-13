@@ -1,9 +1,14 @@
+import { useState } from "react";
 import Card from "../../components/Card";
+import ProjectDrawer from "../../components/Drawer";
 import { ProjectData } from "../../types";
 
 import style from "./projects.module.css";
 
 function Projects() {
+  const [drawerOpen, toggleDrawerOpen] = useState(false);
+  const [activeProject, setActiveProject] = useState<ProjectData>({});
+
   const ProjectList = [
     {
       title: "Project",
@@ -23,8 +28,8 @@ function Projects() {
   ];
 
   const openDrawer = (project: ProjectData) => {
-    console.log(project);
-    alert(`OPEN PROJECT ${project.title}`);
+    setActiveProject(project);
+    toggleDrawerOpen(true);
   };
 
   return (
@@ -39,6 +44,12 @@ function Projects() {
           />
         ))}
       </div>
+
+      <ProjectDrawer
+        open={drawerOpen}
+        {...activeProject}
+        onClose={() => toggleDrawerOpen(false)}
+      />
     </div>
   );
 }
