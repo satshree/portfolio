@@ -1,0 +1,11 @@
+.project-page {
+  height: 100vh;
+  padding: 100px 2rem;
+}
+
+.project-list {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
