@@ -8,9 +8,11 @@
   margin: 0.5rem;
   padding: 1rem;
 
+  min-height: 350px;
   width: 350px;
 
   transition: box-shadow 0.1s linear;
+  box-sizing: border-box;
 }
 
 .card:hover {

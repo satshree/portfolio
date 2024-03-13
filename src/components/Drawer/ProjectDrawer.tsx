@@ -26,7 +26,7 @@ function ProjectDrawer(props: DrawerProps) {
   useEffect(() => setTitle(props.title || ""), [props.title]);
   useEffect(() => setDescription(props.description || ""), [props.description]);
   useEffect(() => setTechStack(props.techStack || []), [props.techStack]);
-  useEffect(() => setImages(props.images || [img]), [props.techStack]);
+  useEffect(() => setImages(props.images || [img]), [props.images]);
 
   const onClose = () => {
     if (props.onClose) props.onClose();
