@@ -19,3 +19,10 @@ export type DrawerProps = PropsWithChildren &
     open: true | false;
     onClose?: () => void;
   };
+
+export type GlobalState = {
+  activeProject?: ProjectData;
+  projectList?: ProjectData[];
+};
+
+export type ProjectProps = PropsWithChildren & GlobalState;
